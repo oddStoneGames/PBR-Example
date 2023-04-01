@@ -2018,7 +2018,8 @@ void ProcessInput(GLFWwindow* window)
 		if (fullScreen)
 		{
 			//Set To Windowed Mode.
-			glfwSetWindowMonitor(window, NULL, 0, 0, SCR_WIDTH, SCR_HEIGHT, GLFW_DONT_CARE);
+			// Non zero value for offsets to make sure that the title bar can render on windows.
+			glfwSetWindowMonitor(window, NULL, 20, 40, SCR_WIDTH, SCR_HEIGHT, GLFW_DONT_CARE);
 			//Get The Frame Buffer Size & Update Them.
 			glfwGetFramebufferSize(window, &bufferWidth, &bufferHeight);
 			UpdateAllFramebuffersSize(bufferWidth, bufferHeight);
