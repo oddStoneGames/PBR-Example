@@ -30,6 +30,9 @@ list(APPEND INCLUDES vendor/stb)
 # GLM
 list(APPEND INCLUDES vendor/glm)
 
+# JSON
+list(APPEND INCLUDES vendor/json)
+
 # Add extra libraries based on the operating system.
 if(WIN32)
     list(APPEND gdi32 user32)
@@ -38,7 +41,7 @@ else()
 endif()
 
 set(SOURCE_FILES    src/Scripts/AdvancedLighting.cpp src/Scripts/Model.cpp
-                    src/Scripts/Model.h src/Scripts/Mesh.h src/Scripts/json.h
+                    src/Scripts/Model.h src/Scripts/Mesh.h
                     src/Scripts/Shader.h src/Scripts/Camera.h)
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 

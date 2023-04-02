@@ -89,6 +89,7 @@ This project has some third-party dependencies, each of which may have independe
 - [glm](https://github.com/g-truc/glm): OpenGL Mathematics
 - [dear imgui](https://github.com/ocornut/imgui): Immediate Mode Graphical User Interface
 - [stb](https://github.com/nothings/stb): Single-file public domain (or MIT licensed) libraries
+- [json](https://github.com/nlohmann/json): JSON for Modern C++
 
 HDR Maps:
 - [Cannon](https://polyhaven.com/a/cannon)

@@ -1,7 +1,7 @@
 #ifndef Model_H
 #define Model_H
 
-#include "json.h"
+#include <json.h>
 #include "Mesh.h"
 
 using json = nlohmann::json;
